@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.globalhandyman.com</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1> Emjay Global Handyman Marketplace</h1>
+        <nav>
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#regions">Regions</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Book a service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Find Skilled Handymen near you</h2>
+        <p>connect with experience professsionals for your home and business needs.</p>
+
+        <div class="btn">
+        <button id="find-handyman">Find a Handyman</button>
+        </div>
+    </section>
+
+    <section id="regions" class="content-box">
+        <div class="container">
+        <h2>Available regions</h2>
+        <p>select your region to find Handymen near you </p>
+        <label for="region">Select region</label>
+        <select name="region select" id="region select">
+        <option value="north-america">North-America</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+        <option value="australia">Australia</option>
+        <option value="africa">Africa</option>
+        </select>
+        </div>
+
+    </section>
+    
+    <section id="services" class="content-box">
+        <div class="container">
+            <h2>Services</h2>
+            <p>We offer a wide range of services to meet your needs.</p>
+        <h2>Services offered</h2>
+        <ul>
+
+            <li>plumbing</li>
+            <li>carpentry</li>
+            <li>electrical repairs</li>
+            <li>painting</li>
+            <li>Barber</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="booking" class="content-box">
+        <h2>Book a Service</h2>
+        <p>fill out the form to request a service</p>
+        <form id="booking-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">Your Address</label>
+            <input type="text" id="address" name="address" required>
+            <label for="city">Your City</label>
+            <input type="text" id="city" name="city" required>
+            <label for="country">Your Country</label>
+            <input type="text" id="country" name="country" required>
+            <label for="zipcode">Your Zipcode</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+            <label for="date">Service Date</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Service Time</label>
+            <input type="time" id="time" name="time" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="service">Select a service</label>
+            <select id="service" name="service" required>
+                <option value="plumbing">Plumbing</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="electrical">Electrical</option>
+                <option value="painting">Painting</option>
+                <option value="barber">Barber</option>
+
+                <label for="region">Select region</label>
+                <select name="region" id="region"></select>
+                
+                <option value="north-america">North America</option>
+                <option value="europe">Europe</option>
+                <option value="asia">Asia</option>
+                <option value="australia">Australia</option>
+                <option value="africa">Africa</option>
+                </select>
+                <button type="submit">Request Service</button>
+        </form>
+         <section id="about" class="content-box">
+            <h2>About Us</h2>
+            <p>we connect customers with reliable Handymen across the Globe.</p>
+         </section>
+
+         <section id="contact" class="content-box">
+            <h2>Contact Us</h2>
+            <p>Email: majeedlateef82@gmail.com</p>
+         </section>
+         <footer>
+            <p>&copy; 2025 Handyman Marketplace. All rights reserved</p>
+         </footer>
+
+    </section>
+    <script src="project.js"></script>
+</body>
+</html>
