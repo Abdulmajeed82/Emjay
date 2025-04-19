@@ -1,28 +1,27 @@
-/*responsive font and layout*/
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: rgb(240, 217, 217);
     color: black;
     font-size: 16px;
     text-decoration: none;
 }
-header{
+
+header {
     background-color: #333;
     color: black;
     padding: 30px;
     text-align: center;
-    gap: 15px;
-    text-decoration: none;
     height: 80px;
 }
-a{
+
+a {
     text-decoration: none;
-    gap: 15px;
     color: white;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,19 +29,21 @@ nav ul{
     background-color: #333;
     text-align: center;
 }
-nav ul li{
+
+nav ul li {
     display: inline;
-    text-decoration: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
     padding: 14px 20px;
-    text-align: center;
     font-size: 18px;
+    text-align: center;
 }
-.hero{
-    background-image: url("pexels-ivan-samkov-4491881.jpg");
+
+.hero {
+    background-image: url('pexels-ivan-samkov-4491881.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -55,6 +56,7 @@ nav ul li a{
     animation: fadeIn 1.5s ease-in-out forwards;
     padding: 15px;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -65,23 +67,13 @@ nav ul li a{
         transform: translateY(0);
     }
 }
-@media screen and (max-width: 600px) {
-    .container {
-        width: 90%;
-        height: auto;
-    }
-}
-@media screen and (max-width: 600px) {
- .container2 {
-        width: 90%;
-        height: auto;
- }
-}
-.hero h1{
+
+.hero h1 {
     font-size: 50px;
     margin: 0;
 }
-.content-box{
+
+.content-box {
     justify-content: center;
     margin: 20px auto;
     padding: 20px;
@@ -91,36 +83,21 @@ nav ul li a{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 2s ease forwards;
 }
-.container{
+
+.container, .container2 {
     justify-content: center;
     align-items: center;
-    height: 500px;
     background-color: #504d4d;
-    width: 300px;
+    width: 90%;
     margin: 0 auto;
-    padding: 30px;
-    display: 
-    flex;
+    padding: 20px;
+    display: flex;
     flex-direction: column;
     font-size: 20px;
     border-radius: 15px;
     animation: slideUp 1.5s ease forwards;
 }
-.container2{
-    justify-content: center;
-    align-items: center;
-    height: 120vh;
-    background-color: #504d4d;
-    width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    display: 
-    flex;
-    flex-direction: column;
-    font-size: 20px;
-    border-radius: 15px;
-    animation: slideUp 1.5s ease forwards;
-}
+
 @keyframes slideUp {
     from {
         transform: translateY(20px);
@@ -131,32 +108,37 @@ nav ul li a{
         opacity: 1;
     }
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 250px;
+    width: 100%;
 }
-label,input,select,button{
-    padding: 5px;
+
+label, input, select, button {
+    padding: 10px;
     margin: 10px 0;
     font-size: 16px;
 }
-button{
+
+button {
     background-color: #5215a3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: bold;
+    font-weight: bold;
 }
-button:hover{
+
+button:hover {
     background-color: #575353;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     font-size: large;
 }
-footer{
+
+footer {
     background-color: #7e7575;
     color: white;
     text-align: center;
@@ -164,4 +146,15 @@ footer{
     position: relative;
     bottom: 10px;
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .container, .container2 {
+        width: 90%;
+        height: auto;
+    }
 }
