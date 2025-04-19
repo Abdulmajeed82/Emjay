@@ -42,7 +42,7 @@ nav ul li a{
     font-size: 18px;
 }
 .hero{
-    background-image: url('pexels-ivan-samkov-4491881.jpg');
+    background-image: url("pexels-ivan-samkov-4491881.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
